@@ -39,7 +39,7 @@ export default function Loader({ onDone }) {
       <div className="flex flex-col items-center gap-6">
         <LogoMark className="h-10 w-10 text-bone" />
         <div className="flex gap-[0.04em] font-display text-[clamp(2.4rem,9vw,5.5rem)] font-semibold uppercase leading-none tracking-[0.18em]">
-          {'ALCOVE'.split('').map((c, i) => (
+          {'BAASA'.split('').map((c, i) => (
             <span key={i} className="inline-block overflow-hidden pb-[0.08em]">
               <span className="ld-char inline-block">{c}</span>
             </span>

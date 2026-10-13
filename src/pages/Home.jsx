@@ -41,7 +41,7 @@ export default function Home() {
   return (
     <>
       <Hero featured={properties[0]} />
-      <Marquee items={MARQUEE} />
+      {/* <Marquee items={MARQUEE} /> */}
       {error ? (
         <div className="container-x py-24"><ErrorState text={error} onRetry={() => setNonce((n) => n + 1)} /></div>
       ) : (

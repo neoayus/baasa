@@ -13,21 +13,24 @@ const mongoose = require("mongoose");
 // Middlewear
 app.use(
   cors({
-    origin: "https://localhost:5173",
+    origin: "http://localhost:5173",
   }),
 );
 
 app.use(express.json());
 
 // routes
+const propertyRoutes = require("./routes/propertyRoutes");
+app.use("/api/properties", propertyRoutes);
 
 // Test endpoint
 app.get("/", (req, res) => {
+  console.log("this that root route!");
+
   res.status(200).json({
     success: true,
     message: "BAASA API is runnin",
   });
-  console.log("this that root route!");
 });
 
 // define port

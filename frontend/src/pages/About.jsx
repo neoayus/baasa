@@ -28,7 +28,7 @@ const STATS = [
 export default function About() {
   useDocTitle(
     "About",
-    "Alcove is a curated marketplace for verified homes and the people who rent them.",
+    "BAASA is a curated marketplace for verified homes and the people who rent them.",
   );
   return (
     <div className="pb-12 pt-28 lg:pt-40">
@@ -90,7 +90,7 @@ export default function About() {
       </div>
 
       {/* Numbers */}
-{/*       <section className="container-x mt-24 md:mt-36" aria-label="Numbers">
+      {/*       <section className="container-x mt-24 md:mt-36" aria-label="Numbers">
         <dl className="grid grid-cols-2 gap-px overflow-hidden rounded-[2rem] border border-line bg-line lg:grid-cols-4">
           {STATS.map(([n, l]) => (
             <Reveal key={l} className="bg-ink p-7 md:p-10">
